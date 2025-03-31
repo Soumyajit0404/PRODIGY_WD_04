@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Developer Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <div class="logo">Soumyajit Dutta</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="home">
+        <div class="home-content">
+            <img src="profile.jpeg" alt="Profile" class="profile-img">
+            <h1 class="headline">Full Stack Web Developer</h1>
+            <p class="skills-summary">
+                HTML5 | CSS3 | JavaScript | React | Node.js <br> Firebase | Bootstrap | React Native | Python | C,C++
+            </p>
+            <a href="#contact" class="submit-btn">Get In Touch</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="section-container">
+            <div class="about-text">
+                <h2 class="section-title">About Me</h2>
+                <p>
+                    Hello! I'm Soumyajit Dutta, a passionate B.Tech Computer Science student with a strong interest in software development, problem-solving, and teaching. With a solid foundation in C, HTML, and CSS, Bootstrap, I also have intermediate proficiency in Python and beginner-level experience in JavaScript, Django, Firebase, React Native, and Node.js.
+                </p>
+                <br>
+                <p>
+                    Beyond coding, I have a year of teaching experience, where I focus on understanding students' needs and tailoring my approach to help them grasp concepts effectively. I’ve also participated in hackathons, developing projects like an Image-to-CSV converter, a student attendance system, a pothole detection system and a plastic detection system, showcasing my ability to apply technology to solve real-world problems.
+                </p>
+                <p>
+                    Apart from tech, I am a certified swimmer, a football enthusiast, and a music lover who enjoys playing the guitar. My dedication to continuous learning and problem-solving drives me to explore new technologies and contribute meaningfully to the field of computer science.   
+                </p>
+            </div>
+            <div class="about-skills">
+                <h3>Skills</h3>
+                <ul>
+                    <li>Frontend: HTML5, CSS3, JavaScript, React Native, Bootstrap</li>
+                    <li>Backend: Node.js, Django Framework, Python</li>
+                    <li>Database: Firebase (NoSQL, Cloud Database)</li>
+                    <li>Tools: Git and Github, NPM, VS Code</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="section-container">
+            <h2 class="section-title" style="text-align: center; width: 100%;">My Projects</h2>
+        </div>
+        <div class="projects-grid">
+            <div class="project-card">
+                <img src="plastic detection.webp" alt="Project 1" class="project-image">
+                <div class="project-info">
+                    <h3>Plastic Detection System</h3>
+                    <p>Full-stack plastic detection system with React and Node.js and machine learning</p>
+                </div>
+            </div>
+            <div class="project-card">
+                <img src="pothole.jpg" alt="Project 2" class="project-image">
+                <div class="project-info">
+                    <h3>Pothole Detetction System</h3>
+                    <p>Real time pothole detectionusing Roboflow</p>
+                </div>
+            </div>
+            <div class="project-card">
+                <img src="ecom.png" alt="Project 3" class="project-image">
+                <div class="project-info">
+                    <h3>E-Commerce Website</h3>
+                    <p>Interactive dashboard using modern web technologies</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="section-container">
+            <h2 class="section-title">Contact Me</h2>
+            <form class="contact-form">
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Your Name" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" class="form-control" placeholder="Your Email" required>
+                </div>
+                <div class="form-group">
+                    <textarea class="form-control" placeholder="Your Message" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="submit-btn">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer class="bottom-navbar">
+        <ul>
+            <li><a href="https://github.com/soumyajit0404" target="_blank"><img src="github-icon.png" alt="GitHub"></a></li>
+            <li><a href="https://www.facebook.com/profile.php?id=61559271587697" target="_blank"><img src="facebook-icon.png" alt="Facebook"></a></li>
+            <li><a href="https://instagram.com/gawd_died" target="_blank"><img src="instagram-icon.png" alt="Instagram"></a></li>
+        </ul>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>

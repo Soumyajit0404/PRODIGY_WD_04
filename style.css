@@ -1,0 +1,259 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #3498db;
+    --secondary-color: #2ecc71;
+    --text-color: #333;
+    --background-color: #f4f4f4;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: var(--background-color);
+}
+
+/* Navigation */
+.navbar {
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem 2rem;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: var(--text-color);
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: var(--primary-color);
+}
+
+/* Home Section */
+.home {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    text-align: center;
+    padding: 0 2rem;
+}
+
+.home-content {
+    max-width: 800px;
+}
+
+.profile-img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid var(--primary-color);
+    margin-bottom: 20px;
+    margin-top: 50px;
+}
+
+.headline {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: var(--text-color);
+}
+
+.skills-summary {
+    color: var(--primary-color);
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+
+
+/* About Section */
+.about {
+    background-color: white;
+    padding: 80px 0;
+}
+
+.section-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.about-text {
+    flex: 1;
+}
+
+.section-title {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: var(--primary-color);
+}
+
+/* Projects Section */
+.projects {
+    background-color: var(--background-color);
+    padding: 80px 0;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.project-card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px  rgba(15, 145, 201, 0.995),
+                0 -4px 6px rgba(15, 145, 201, 0.995);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+    transform: scale(1.05);
+}
+
+.project-image {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.project-info {
+    padding: 20px;
+}
+
+/* Contact Section */
+.contact {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 80px 0;
+    text-align: center;
+
+}
+
+.contact-form {
+    margin: 0 auto;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-control {
+    width: 100%;
+    padding: 20px;
+    border: none;
+    border-radius: 5px;
+}
+
+.submit-btn {
+    background-color: var(--secondary-color);
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.submit-btn:hover {
+    background-color: #27ae60;
+}
+
+/*footer*/
+.bottom-navbar {
+    width: 100%;
+    background-color: #333;
+    padding: 15px 0;
+    text-align: center;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
+    position: relative;  /* Ensures it stays at the bottom of content */
+    margin-top: 0px;    /* Adds spacing between content and navbar */
+}
+
+.bottom-navbar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.bottom-navbar li {
+    display: inline;
+}
+
+.bottom-navbar a img {
+    width: 30px; /* Adjust size as needed */
+    height: 30px;
+    filter: invert(1); /* Makes icons white */
+    transition: transform 0.3s ease;
+}
+
+.bottom-navbar a:hover img {
+    transform: scale(1.5);
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .section-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .nav-links {
+        display: none; /* For simplicity. In a real project, add mobile menu */
+    }
+
+    .profile-img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .headline {
+        font-size: 2rem;
+    }
+}
